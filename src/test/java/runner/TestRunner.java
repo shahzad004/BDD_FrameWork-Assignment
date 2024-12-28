@@ -6,12 +6,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepdefinations",
-        tags="@SMOKE"
-
+        tags = "@SMOKE"
+        
 )
-
 public class TestRunner extends AbstractTestNGCucumberTests {
-
-
 
 }

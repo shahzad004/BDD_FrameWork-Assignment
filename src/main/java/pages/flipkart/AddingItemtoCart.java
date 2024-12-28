@@ -34,7 +34,7 @@ public class AddingItemtoCart {
         juicer.click();
 
         WaitUtils.applyWait(driver,cartAdding,WaitStrategy.VISIBLE);
-        Thread.sleep(5000);
+        Thread.sleep(10000);
          String text=cartAdding.getText();
         if(text.equalsIgnoreCase("Add to Cart"))
             cartAdding.click();

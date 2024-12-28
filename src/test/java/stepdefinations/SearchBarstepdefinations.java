@@ -2,12 +2,10 @@ package stepdefinations;
 
 import Base.BaseTest;
 import config.ConfigManager;
-import config.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 
-import org.openqa.selenium.WebDriver;
 import pages.flipkart.SearchFeature;
 import utils.WaitUtils;
 
@@ -17,8 +15,7 @@ public class SearchBarstepdefinations extends BaseTest {
 
     @Before
     public void featuresetup(){
-            setup();
-
+        setup();
     }
 
 

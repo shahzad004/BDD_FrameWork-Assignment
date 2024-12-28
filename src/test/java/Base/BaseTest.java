@@ -25,8 +25,9 @@ public class BaseTest {
     public void setup(){
 
         driver=DriverFactory.getDriver();
-        driver.get(baseUrl);
         System.out.println(baseUrl);
+        driver.get(baseUrl);
+
     }
 
     @AfterMethod

@@ -17,7 +17,7 @@ public class MobilefeatureStepDefinations extends BaseTest {
 
     @Before
     public void brows(){
-        driver=DriverFactory.getDriver();
+       driver=DriverFactory.getDriver();
         cartPage=new MobileMenu(driver);
 
     }

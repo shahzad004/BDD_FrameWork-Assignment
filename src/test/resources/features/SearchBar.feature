@@ -1,4 +1,3 @@
-@SMOKEF
 Feature: SearchBar Feature
 
   Scenario Outline: Search for something in Search bar

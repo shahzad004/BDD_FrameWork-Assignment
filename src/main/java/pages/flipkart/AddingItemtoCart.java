@@ -20,26 +20,30 @@ public class AddingItemtoCart {
     @FindBy (xpath = "//img[@alt='Appliances']")
    public WebElement applicance;
 
-    @FindBy (xpath = "(//img[@alt='wash'])[2]")
+    @FindBy (xpath = "//div[4]//div[1]//div[1]//a[1]//div[1]//img[2] ")
    public WebElement juicer;
 
-    @FindBy (xpath = "//button[normalize-space()='Add to cart']")
+    @FindBy (xpath = "/html[1]/body[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/button[1]")
+
     public WebElement cartAdding;
+
 
     public  void additionToCart() throws InterruptedException {
         applicance.click();
         WaitUtils.applyWait(driver,juicer, WaitStrategy.CLICKABLE);
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         juicer.click();
 
         WaitUtils.applyWait(driver,cartAdding,WaitStrategy.VISIBLE);
-        Thread.sleep(10000);
+        Thread.sleep(1000);
          String text=cartAdding.getText();
         if(text.equalsIgnoreCase("Add to Cart"))
             cartAdding.click();
           else
+
             System.out.println("Add to Cart Option is not Available");
+        cartAdding.click();
         System.out.println("Item is Added to Cart");
 
     }

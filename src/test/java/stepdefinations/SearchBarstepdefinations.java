@@ -2,6 +2,7 @@ package stepdefinations;
 
 import Base.BaseTest;
 import config.ConfigManager;
+import config.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
@@ -15,7 +16,7 @@ public class SearchBarstepdefinations extends BaseTest {
 
     @Before
     public void featuresetup(){
-        setup();
+
     }
 
 

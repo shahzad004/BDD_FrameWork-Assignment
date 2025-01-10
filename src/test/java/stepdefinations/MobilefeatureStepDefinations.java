@@ -1,3 +1,4 @@
+
 package stepdefinations;
 
 import Base.BaseTest;
@@ -17,7 +18,8 @@ public class MobilefeatureStepDefinations extends BaseTest {
 
     @Before
     public void brows(){
-       driver=DriverFactory.getDriver();
+
+
         cartPage=new MobileMenu(driver);
 
     }
